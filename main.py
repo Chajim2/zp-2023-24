@@ -23,11 +23,12 @@ def nash_eq(n, data):
     goals = 0
     for i in range(n):
         curr = random.random()
-        if curr <= 0.4:
+        if curr <= 0.251:
             goals += rand_bool(data[0])
-        elif curr <= 0.69:
+        elif curr <= 0.44:
             goals += rand_bool(data[1])
-        elif curr <= 0.87:
+        elif curr <= 0.759:
             goals += rand_bool(data[2])
         else: goals+= rand_bool(data[3])
     return goals
+
